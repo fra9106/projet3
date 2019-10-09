@@ -5,22 +5,16 @@ class MyMap {
     constructor(myMap) {
 
         this.myMap = myMap;
-
-
-
-
     }
+
     //initiation de la carte
     initMap() {
-
 
         //création du calque image
         L.tileLayer('https://maps.heigit.org/openmapsurfer/tiles/roads/webmercator/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: 'Imagery from <a href="http://giscience.uni-hd.de/">GIScience Research Group @ University of Heidelberg</a> | Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(this.myMap);
-
-
     }
 
     createMarker(number, name, Adresse, Velos_dispos, Places_dispos, latLng, message, open) {
@@ -44,12 +38,9 @@ class MyMap {
             .then(result => result.json())
             .then(json => {
 
-
-
                     // vélos dispo après validation...
                     let validVeloDispo = Number(json.mainStands.availabilities.bikes) - 1 //avec comme argument Number l'adresse de l'info du Json - 1 pour le vélo réservé
 
-                    
                     // affichage des infos dans - Détail de la Station - fraîchement récupérés par stations au click sur le marker
                     document.querySelector('#infos_station').innerHTML = '<p> Station : ' + json.status + ' <br> Numéro : ' + json.number + '<br> Stand : ' + json.name + ' <br> Adresse : ' + json.address + ' <br> Vélos disponibles : ' + json.mainStands.availabilities.bikes + ' <br> Places disponibles : ' + json.mainStands.availabilities.stands + '</p>';
                     document.querySelector('#form').style.visibility = 'initial'
@@ -59,27 +50,14 @@ class MyMap {
                     sessionStorage.setItem('VeloDispoApresValidation', validVeloDispo)
                     sessionStorage.setItem('Adresse', json.address)
 
-
-
                     // si il n'y a plus de vélos dispos sur la station cliqué, on alert un message
                     if (json.mainStands.availabilities.bikes === 0) {
                         alert('Plus de vélos disponibles ici, cliquez sur une autre station!');
                     }
-
-
-
                 })
-
-
         });
 
         return marker;
-
-
-
-
     };
-
-
 };
 export default MyMap;

@@ -38,11 +38,9 @@ class Timer {
 
                 }
 
-
             },
             1000) // 1 seconde en milliseconde
     }
-
 
     start() {
 
@@ -73,10 +71,6 @@ class Timer {
         });
 
     }
-
-
-
-
 }
 
 export default Timer;

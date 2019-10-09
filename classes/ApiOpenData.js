@@ -1,10 +1,7 @@
 class ApiOpenData { // class récupération des datas api Decaux
 
     constructor() {
-
         this.stations = []; // tableau vide pour récupérer data 
-
-
     }
 
     fetchData(url) { // méthode qui renvoit une promesse avec en argument l'URL decaux
@@ -28,12 +25,9 @@ class ApiOpenData { // class récupération des datas api Decaux
 
         });
 
-        
         return this.stations; //on return le tableau; si cela de passe mal on catch l'erreur
 
     }
-
-
 }
 
 export default ApiOpenData;

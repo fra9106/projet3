@@ -13,8 +13,6 @@ class Diaporama {
         this.time = 5000 // timer à 5000 milisecondes = 5 sec
         this.positionImage = 0 // premier indice du tableau: 1ère photo 
         this.texte = texte
-
-
     }
 
     //méthode prev 
@@ -80,8 +78,5 @@ class Diaporama {
 
         });
     }
-
-
-
 }
 export default Diaporama;

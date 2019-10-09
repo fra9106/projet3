@@ -1,4 +1,4 @@
-import Canvas from "/projet3/classes/canas.js";
+import Canvas from "/projet3/classes/canvas.js";
 import Timer from "/projet3/classes/timer.js";
 import MyMap from "/projet3/classes/MyMap.js";
 
@@ -17,7 +17,6 @@ class Formulaire {
         this.formInit();// initiation méthode de gestion d'évenements des différents formulaires
         this.recInfos();// initiation méthode de gestion d'enregistrement nom prénom en localStorage
 
-
     }
 
     recInfos() { // méthode de gestion d'enregistrement nom prénom en localStorage
@@ -29,11 +28,12 @@ class Formulaire {
         } else {
             this.signature.style.visibility = 'initial'
         }
+
         localStorage.setItem('Nom', this.nom.value);
         localStorage.setItem('Prenom', this.prenom.value);
 
-    });
-}
+        });
+    }
 
     formInit() { // méthode de gestion d'initiation et d'évenements des différents formulaires
 
@@ -54,10 +54,6 @@ class Formulaire {
                         sessionStorage.setItem('StationReserve', this.StationReserve);
                         clearInterval(this.compteur);
                         
-
-
-
-
                     }
                     // gestion cache/apparition infos des différents formulaires
                     document.querySelector('#timer').style.visibility = 'initial'
@@ -69,15 +65,11 @@ class Formulaire {
                         this.boutConfirm.style.visibility = 'hidden'
                         document.querySelector('#map').style.width = "100%"
 
-
                     }
-
 
                 });
 
-
             }
-
 
             );
         //bouton "Annuler le formulaire"
@@ -89,13 +81,7 @@ class Formulaire {
             this.boutConfirm.style.visibility = 'hidden'
 
         });
-
-
     }
-
-
-
-
 }
 
 export default Formulaire;
