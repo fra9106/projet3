@@ -36,10 +36,9 @@ class Formulaire {
     }
 
     formInit() { // méthode de gestion d'initiation et d'évenements des différents formulaires
-
-
-        // évenement bouton réserver
-        this.boutReserver.addEventListener('click', () => {
+    
+                // évenement bouton réserver
+                this.boutReserver.addEventListener('click', () => {
                 // gestion cache/apparition infos : signature
                 document.querySelector('#signature').style.visibility = 'initial'
                 this.boutConfirm.style.visibility = 'hidden'
