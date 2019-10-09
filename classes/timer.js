@@ -32,8 +32,8 @@ class Timer {
                 if (this.min < 0) { 
                     document.querySelector('.textDecompte').innerHTML = "Temps Expiré !"
                     clearInterval(this.compteur);
-                    this.min = 1;
-                    this.sec = 59;
+                    this.min = 2; //ATTENTION : TIMER A 2mn SUR CE FICHIER POUR LES BESOINS DE LA DEMO,
+                    this.sec = 0;//REGLE A 20mn EN LIGNE SUR https://monpersoweb.fr/projet3/index.html COMME DEMANDE DANS L'ENONCE, MERCI DE VOTRE COMPREHENTION
                     sessionStorage.clear();
 
                 }
@@ -48,8 +48,8 @@ class Timer {
 
         this.boutConfirm.addEventListener('click', () => {
             clearInterval(this.compteur);
-            this.min = 1;
-            this.sec = 59;
+            this.min = 2;
+            this.sec = 0;
                 // à la confirmation de la signature, on déclenche le compteur
                 this.displayTimer() // on affiche et on fait partir le compteur
 
@@ -65,8 +65,8 @@ class Timer {
         this.boutTimer.addEventListener('click', () => {
             clearInterval(this.compteur);
             sessionStorage.clear();
-            this.min = 1;
-            this.sec = 59;
+            this.min = 2;
+            this.sec = 0;
             document.querySelector('#timer').style.visibility = 'hidden'
             this.boutTimer.style.visibility = 'hidden'
 
