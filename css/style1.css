@@ -1,0 +1,421 @@
+
+/*First Mobile*/
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: "roboto";
+}
+
+h1, h2, h3
+{
+	text-align: center;
+}
+
+h1
+{
+	font-size: 30px;
+	color: #00bbe3;
+}
+
+h2
+{
+	font-size: 28px;
+	color: #00bbe3;
+}
+
+h3
+{
+	font-size: 20px;
+}
+
+p
+{
+	color: grey;
+	text-align: center;
+}
+
+#logo
+{
+	text-align: center;
+}
+
+#map
+{
+	margin-left: 2px;
+	z-index: 1;
+	position: relative;
+	margin-top: -380px;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #00bbe3;
+	border-radius: 5px;
+}
+
+#form
+{
+	position: absolute;
+	margin-left: 12px;
+	background-color: white;
+	height: 500px;
+	width: 335px;
+	z-index: 2;
+	margin-top: -70px;
+	border: 1px solid #00bbe3;
+	border-radius: 5px;
+}
+
+#infos_station
+{
+	text-align: center;
+	color: #00bbe3;
+	font-size: 22px;
+	background: white;
+	margin: 15px;
+	border: 1px solid #00bbe3;
+	border-radius: 5px;
+	position: relative;
+}
+
+#nom
+{
+	margin-left: 25px;
+}
+
+label
+{
+	margin-left: 15px;
+}
+
+#reserver
+{
+	margin-left: 130px;
+	border-radius: 10px;
+	color: #00bbe3;
+	background-color: #1D3365;
+	border: 3px solid yellow;
+	margin-top: 15px;
+}
+
+#annulerForm
+{
+	margin-left: 120px;
+	border-radius: 10px;
+	color: #00bbe3;
+	background-color: #1D3365;
+	border: 3px solid yellow;
+	margin-top: 15px;
+}
+
+#pic
+{
+	display: none;
+}
+
+#slider
+{
+	background-color: lightgrey;
+	height: 500px;
+	z-index: 0;
+}
+
+#left
+{
+	position: absolute;
+	background-color: #1D3365;
+	left: 2px;
+	top: 300px;
+	border: 2px solid yellow;
+	z-index: 3;
+}
+
+.fas.fa-angle-left /*font awesome chevron gauche*/
+
+{
+	position: relative;
+	color: #00bbe3;
+	bottom: 32px;
+	left: -5px;
+	font-size: 25px;
+	bottom: 1px;
+}
+
+#right
+{
+	background-color: #1D3365;
+	position: absolute;
+	right: 1px;
+	top: 300px;
+	border: 2px solid yellow;
+	z-index: 3;
+}
+
+.fas.fa-angle-right /*font awesome chevron droit*/
+
+{
+	position: relative;
+	color: #00bbe3;
+	bottom: -1px;
+	left: 4px;
+	font-size: 25px;
+}
+
+.far.fa-pause-circle
+{
+	position: relative;
+	color: #00bbe3;
+	bottom: -1px;
+	left: -1px;
+	font-size: 25px;
+}
+
+.far.fa-caret-square-right
+{
+	position: relative;
+	color: #00bbe3;
+	bottom: -1px;
+	left: -1px;
+	font-size: 25px;
+}
+
+#pause
+{
+	display: none;
+}
+
+#play
+{
+	display: none;
+}
+
+#textSlider
+{
+	padding-top: 30px;
+	text-align: center;
+	font-size: 28px;
+	color: #00bbe3;
+}
+
+#signature
+{
+	position: absolute;
+	margin-left: 3px;
+	margin-top: 480px;
+	z-index: 3;
+	background-color: white;
+	height: 350px;
+	width: 350px;
+	border: 1px solid #00bbe3;
+	border-radius: 5px;
+}
+
+#confirmez
+{
+	margin-left: 150px;
+	border-radius: 10px;
+	color: #00bbe3;
+	background-color: #1D3365;
+	border: 3px solid yellow;
+}
+
+#annule
+{
+	border-radius: 10px;
+	color: #00bbe3;
+	background-color: #1D3365;
+	border: 3px solid yellow;
+}
+
+#timer
+{
+	background: white;
+	height: auto;
+	border: 1px solid #00bbe3;
+	border-radius: 5px;
+	z-index: 3;
+}
+
+#annuler
+{
+	border-radius: 20px;
+	margin-left: 150px;
+	font-size: 15px;
+	color: #00bbe3;
+	background-color: #1D3365;
+	border: 3px solid yellow;
+}
+
+.textDecompte
+{
+	font-size: 22px;
+}
+
+canvas
+{
+	border: 2px solid #00bbe3;
+	margin-left: 11px;
+}
+
+@media only screen and (min-width: 700px) /*tablettes*/
+
+{
+	#slider-pics
+	{
+		margin-left: 33px;
+		height: 350px;
+		width: 690px;
+		background-color: white;
+		text-align: center;
+		display: block;
+	}
+
+	#pause
+	{
+		display: block;
+		background-color: #1D3365;
+		border: 2px solid yellow;
+		position: relative;
+		margin-left: 295px;
+		top: 1px;
+	}
+
+	#play
+	{
+		display: block;
+		background-color: #1D3365;
+		border: 2px solid yellow;
+		position: relative;
+		top: -30px;
+		margin-left: 350px;
+	}
+
+	#pic
+	{
+		display: block;
+		padding-top: 25px;
+	}
+
+	#map
+	{
+		margin-top: 38px;
+		height: 500px;
+	}
+
+	#signature
+	{
+		margin-top: -65px;
+		margin-left: 390px;
+	}
+
+	#annuler
+	{
+		margin-left: 320px;
+	}
+
+	#textSlider
+	{
+		padding-top: 50px;
+	}
+
+	#left
+	{
+		left: 22px;
+	}
+
+	#right
+	{
+		right: 22px;
+	}
+}
+
+@media only screen and (min-width: 1400px) /*Laptop*/
+
+{
+	#slider-pics
+	{
+		margin-left: 420px;
+	}
+
+	#map
+	{
+		width: 100%;
+	}
+
+	#form
+	{
+		width: 50%;
+		margin-left: 750px;
+		margin-top: -500px;
+	}
+
+	#signature
+	{
+		margin-top: -65px;
+		margin-left: 800px;
+		width: 700px;
+	}
+
+	canvas
+	{
+		margin-left: 190px;
+	}
+
+	#annuler
+	{
+		margin-left: 700px;
+	}
+
+	#reserver
+	{
+		margin-left: 240px;
+	}
+
+	#annule
+	{
+		margin-left: 290px;
+	}
+}
+
+@media only screen and (min-width: 1900px) /*Desktop*/
+
+{
+	#slider-pics
+	{
+		margin-left: 597px;
+	}
+
+	#form
+	{
+		margin-left: 944px;
+	}
+
+	#signature
+	{
+		margin-top: -65px;
+		margin-left: 1000px;
+		width: 850px;
+	}
+
+	canvas
+	{
+		margin-left: 280px;
+	}
+
+	#reserver
+	{
+		margin-left: 350px;
+	}
+
+	#annule
+	{
+		margin-left: 490px;
+	}
+
+	#annuler
+	{
+		margin-left: 900px;
+	}
+}
