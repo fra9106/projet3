@@ -28,13 +28,13 @@ class Canvas {
 
         if (this.draw) {
 
-            this.context.lineTo(e.offsetX, e.offsetY);
-            this.context.stroke();
-            this.context.beginPath();
+            this.context.lineTo(e.offsetX, e.offsetY);// trace le trait
+            this.context.stroke();//abaisse le crayon
+            this.context.beginPath(); //on comence un tracé
             this.context.arc(e.offsetX, e.offsetY, this.radius, 0, Math.PI * 2); //defini le 1er point en forme de cercle à chaque clic*/
             this.context.fill(); //rempli le trait
-            this.context.beginPath();
-            this.context.moveTo(e.offsetX, e.offsetY);
+            this.context.beginPath();//commence un tracé
+            this.context.moveTo(e.offsetX, e.offsetY);//déplace le crayon suivant les coordonnées respectivement horizontales(X) et verticales(Y)
 
         }
     }

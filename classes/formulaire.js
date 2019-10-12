@@ -1,5 +1,5 @@
-import Canvas from "/projet3/classes/canvas.js";
-import Timer from "/projet3/classes/timer.js";
+import Canvas from "/projet3/classes/Canvas.js";
+import Timer from "/projet3/classes/Timer.js";
 import MyMap from "/projet3/classes/MyMap.js";
 
 class Formulaire {
@@ -73,7 +73,6 @@ class Formulaire {
             );
         //bouton "Annuler le formulaire"
         this.boutAnnulerForm.addEventListener('click', () => {
-
             document.querySelector('#form').style.visibility = 'hidden'
             document.querySelector('#infos_station').style.visibility = 'hidden'
             this.signature.style.visibility = 'hidden'

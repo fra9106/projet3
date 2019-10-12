@@ -48,14 +48,12 @@ class Timer {
             clearInterval(this.compteur);
             this.min = 2;
             this.sec = 0;
-                // à la confirmation de la signature, on déclenche le compteur
-                this.displayTimer() // on affiche et on fait partir le compteur
-
+            // à la confirmation de la signature, on déclenche le compteur
+            this.displayTimer() // on affiche et on fait partir le compteur
 
             }
 
             );
-
 
     }
 
@@ -63,8 +61,6 @@ class Timer {
         this.boutTimer.addEventListener('click', () => {
             clearInterval(this.compteur);
             sessionStorage.clear();
-            this.min = 2;
-            this.sec = 0;
             document.querySelector('#timer').style.visibility = 'hidden'
             this.boutTimer.style.visibility = 'hidden'
 

@@ -1,5 +1,5 @@
 import ApiOpenData from '/projet3/classes/ApiOpenData.js';
-import Timer from '/projet3/classes/timer.js';
+import Timer from '/projet3/classes/Timer.js';
 
 class MyMap {
     constructor(myMap) {
@@ -19,18 +19,18 @@ class MyMap {
 
     createMarker(number, name, Adresse, Velos_dispos, Places_dispos, latLng, message, open) {
         let velo = L.icon({
-            iconUrl: 'images/marqueurVélo.png',
+            iconUrl: 'images/marqueurVélo.png', // url image marker personalisés
             iconSize: [45, 45]
         })
 
 
         let marker = L.marker(latLng, {
-            icon: velo
+            icon: velo // marker personalisé
         })
 
         .bindPopup(message)
 
-        if (open === true) marker.openPopup();
+        if (open === true) marker.openPopup(); // ouverture ou non des popUp
 
 
         marker.addEventListener('click', () => { // fetch pour récuperer les infos en temps réel de l'api Decaux par le numéro de chaque station

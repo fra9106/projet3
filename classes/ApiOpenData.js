@@ -6,7 +6,7 @@ class ApiOpenData { // class récupération des datas api Decaux
 
     fetchData(url) { // méthode qui renvoit une promesse avec en argument l'URL decaux
         return fetch(url)//return la promesse que renvoit le fetch
-            .then(res => res.json()) //reponse JSON
+            .then(reponse => reponse.json()) //reponse promesse JSON
             .then(data => this.recData(data)) // renvoit la fonction recData qui enregistre les données demandées
             .catch(err => console.error(err)); // catch error au cas où...
         }
